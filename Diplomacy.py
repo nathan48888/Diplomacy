@@ -2,31 +2,27 @@
 
 import sys
 
-def diplomacy_solve():
+def diplomacy_solve(r, w):
 	
 	action_list = ["Move", "Support", "Hold"]
 	input_list = []
 
-	while True:
+	for s in r:
 
-		line = sys.stdin.readline()
-		a = line.split()
-		
-		# break loop after final line
-		if len(a) < 3:	
-			break
-		
-		else:
-		
-			assert len(a[0]) == 1
-			assert len(a[1]) > 0
-			assert a[2] in action_list
+		a = s.split()
 
-			input_list.append(a)
+		assert isinstance(a, list)
+		assert len(a[0]) == 1
+		assert len(a[1]) > 0
+		assert a[2] in action_list
 
-	test = diplomacy_eval(input_list)
+		input_list.append(a)
 
-	return diplomacy_print(test)
+	output = diplomacy_eval(input_list)
+
+	assert isinstance(output, dict)
+
+	diplomacy_print(output, w)
 
 
 def diplomacy_eval(a):
@@ -105,13 +101,9 @@ def diplomacy_eval(a):
 	return output_dict
 
 
-def diplomacy_print(output_dict):
+def diplomacy_print(output_dict, w):
 
 	sorted_dict = sorted(output_dict)
 
 	for i in sorted_dict:
-		print(i, output_dict[i])
-
-
-if __name__ == '__main__':
-	diplomacy_solve()
+		w.write(str(i) + " " + str(output_dict[i]) + "\n")
