@@ -2,17 +2,8 @@
 
 import sys
 
-class Armies():
 
-	def __init__(self, name, city, action, *obj):
-		self.name = name
-		self.city = city
-		self.action = action
-		self.obj = obj
-
-	
-
-def diplomacy_read(s):
+def diplomacy_read():
 	
 	action_list = ["Move", "Support", "Hold"]
 
@@ -21,9 +12,10 @@ def diplomacy_read(s):
 	while True:
 
 		line = sys.stdin.readline()
+	
+		a = line.split()
 		
-		if line == "":
-			
+		if len(a) < 3:	
 			break
 		
 		else:
@@ -32,11 +24,11 @@ def diplomacy_read(s):
 
 			assert len(a[0]) == 1
 			assert len(a[1]) > 0
-			assert len(a[2]) in action_list
+			assert a[2] in action_list
 
 			input_list.append(a)
 
-	return input_list
+	print(input_list)
 
 
 def diplomacy_eval(a):
