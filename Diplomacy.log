@@ -1,0 +1,127 @@
+commit cfd0683747f96c249d1a4f4e8f25ba086fae0f40
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 17:48:22 2021 -0500
+
+    Updated acceptance tests
+
+commit de54272d48da1a84320493a9f85ca7fe0c3f4b5c
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jul 15 17:20:06 2021 -0500
+
+    Add documentation
+
+commit 723c93acce5e7a23ecea9bc5663a83dc4966b561
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 16:58:58 2021 -0500
+
+    Completed Diplomacy_solve
+
+commit 95947622ce8e89bc0476e4ad7507f973cfa38b34
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jul 15 15:03:01 2021 -0500
+
+    debug diplomacy_eval()
+
+commit 82832db0e77e6ebd11f79b46db9af518c37cf665
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 13:17:43 2021 -0500
+
+    Updated Diplomacy_solve
+
+commit 0dcfd208468bf80017851a56849eec56b0ceaedb
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 12:44:11 2021 -0500
+
+    Confirmed a working read function
+
+commit 571a13770523b5fba7a8a1412a238ed2a80b5b75
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:49:52 2021 -0500
+
+    Updated makefile; must check for RunDiplomacyN files
+
+commit e2ead39602524984e7a77ca25c2c8b9c386ad8cc
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:45:57 2021 -0500
+
+    Added second round of acceptance tests
+
+commit 7ba2ae7ad1e63cd1865712bd94c7859c5e7d2fdf
+Merge: 9325d97 a52f45c
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:40:58 2021 -0500
+
+    Merge branch 'dev' of https://gitlab.com/nhardham/diplomacy into dev
+
+commit 9325d972beff86db22bf24df9061fa1b77c69211
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:40:35 2021 -0500
+
+    Added first round of acceptance tests
+
+commit a52f45c0095f423df63eb65f8e4a1d2f8b2b8ce5
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 16:24:57 2021 +0000
+
+    Updated Name
+
+commit 36958d773324fd42188e7762b0262a24820e112d
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:24:20 2021 -0500
+
+    Updated name and added the run file
+
+commit 1e087f3603bba441c0c0ca04f98c763f3ab69d72
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:21:19 2021 -0500
+
+    requirements file for project
+
+commit 7131136697a80f15f526d8885c487925ce83e7bf
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:16:23 2021 -0500
+
+    makefile v1
+
+commit ceaddf40c64de754e5543ae719a5b5d507cc2955
+Merge: 3422620 dc77827
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:13:49 2021 -0500
+
+    Merge branch 'dev' of https://gitlab.com/nhardham/diplomacy into dev
+
+commit 3422620bb18f207793528612a40e45fecee1c712
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 11:12:54 2021 -0500
+
+    makefile v1
+
+commit dc77827d31c8e66cf4303ab7e1ebf223a024dbbf
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jul 13 15:23:42 2021 -0500
+
+    import sys
+
+commit e438d1f8d5fc8388ccee97ea78dca33275b96e71
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Tue Jul 13 14:12:03 2021 -0500
+
+    Initialized an Armies Class
+
+commit 8f3cb1daaaa633f6e295d927acfa184f4a699db9
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jul 13 13:48:27 2021 -0500
+
+    added functions
+
+commit 6d5109f7a8fb7a7d852d0c696b76b61eb6e09515
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jul 13 13:37:58 2021 -0500
+
+    created diplomacy.py
+
+commit e89a88f137fd27e8787de06f543e129ae9191811
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Tue Jul 13 18:22:47 2021 +0000
+
+    Initial commit
