@@ -2,7 +2,8 @@
 
 import sys
 
-def diplomacy_read():
+
+def diplomacy_solve():
 	
 	action_list = ["Move", "Support", "Hold"]
 
@@ -30,7 +31,7 @@ def diplomacy_read():
 
 	test = diplomacy_eval(input_list)
 
-	print(test)
+	return diplomacy_print(test)
 
 
 def diplomacy_eval(a):
@@ -38,89 +39,85 @@ def diplomacy_eval(a):
 	cities_dict = {}
 
 	for entry in a:
-
 		cities_dict[entry[1]] = {}
 
 	for entry in a:
-		
 		action = entry[2]
 
 		if action == "Hold":
-
 			cities_dict[entry[1]][entry[0]] = [0]
 		
 		if action == "Support":
-
 			cities_dict[entry[1]][entry[0]] = [0]
 		
 		if action == "Move":
-
 			cities_dict[entry[3]][entry[0]] = [0]
 
 	for entry in a:
-
 		action = entry[2]
 
 		if action == "Support":
-
 			army = entry[3]
 
 			for i in cities_dict:
-
 				for j in cities_dict[i]:
-
 					if j == army:
-
 						cities_dict[i][army][0] += 1
 
-	war_list = []
+	output_dict = {}
 
-	for i in cities_dict:
+	for key in cities_dict:
 		
-		battle_dict = {}
+		if len(cities_dict[key]) == 1:
+			temp_safe_list = list(cities_dict[key])
+			output_dict[temp_safe_list[0]] = key
 
-		for j in cities_dict[i]:
+		elif len(cities_dict[key]) > 1:
+			temp_army_list = []
+			temp_support_list = []
 
-			battle_dict[j] = cities_dict[i][j][0]
+			for army in cities_dict[key]:
+				temp_support_list.append(cities_dict[key][army][0])
+				temp_army_list.append(army)
 
-		battle_dict_copy = battle_dict.copy()
+			copy_temp_support_list = temp_support_list.copy()		
 
-		if len(battle_dict) > 1:
-		
-			max_key_1 = max(battle_dict_copy, key=battle_dict_copy.get)
-			
-			battle_dict_copy.pop(max_key_1)
+			max_key_1 = max(copy_temp_support_list)
 
-			max_key_2 = max(battle_dict_copy, key=battle_dict_copy.get)
+			copy_temp_support_list.remove(max_key_1)
 
-		battle_dict_copy = battle_dict.copy()
+			max_key_2 = max(copy_temp_support_list)
 
-		if max_key_1 == max_key_2:
+			if max_key_1 == max_key_2:
+				for i in temp_army_list:
+					output_dict[i] = "[dead]"
 
-			for k in battle_dict_copy:
+			else:
+				position = temp_support_list.index(max(temp_support_list))
+				output_dict[temp_army_list[position]] = key
+				temp_army_list.pop(position)
+				for i in temp_army_list:
+					output_dict[i] = "[dead]"
 
-				battle_dict.pop(k)
 
-		else:
+	return output_dict
 
-			for k in battle_dict_copy:
-				
-				if k != max_key_1:
 
-					battle_dict.pop(k)
-		
-		war_list.append(battle_dict)
+def diplomacy_print(output_dict):
 
-	return war_list
+	sorted_dict = sorted(output_dict)
+
+
+	for i in sorted_dict:
+
+		print(i, output_dict[i])
+
+
+
 
 if __name__ == '__main__':
-	diplomacy_read()
+	diplomacy_solve()
 
 
-'''
-def diplomacy_print():
-	return
 
-def diplomacy_solve():
-	return
-'''
+
