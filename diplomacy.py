@@ -1,5 +1,6 @@
 # diplomacy
 
+import sys
 
 class Armies():
 
