@@ -1,4 +1,4 @@
-.PHONY: diplomacy.log
+.PHONY: Diplomacy.log
 
 FILES :=                              \
     Diplomacy.html                      \
