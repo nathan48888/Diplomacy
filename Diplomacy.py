@@ -28,14 +28,47 @@ def diplomacy_read():
 
 			input_list.append(a)
 
-	print(input_list)
+	test = diplomacy_eval(input_list)
+	print(test)
 
 
 def diplomacy_eval(a):
-	return
+	
+	cities_dict = {}
 
+	for entry in a:
+		
+		cities_dict[entry[1]] = {}
+
+		if len(entry) == 3:
+
+			cities_dict[entry[1]][entry[0]] = [0]
+
+	
+	for entry in a:
+
+		action = entry[2]
+
+		if action == "Support":
+
+			cities_dict[entry[1]][entry[0]] = [0]
+
+			
+	
+
+
+
+
+	return cities_dict
+
+if __name__ == '__main__':
+	diplomacy_read()
+
+
+'''
 def diplomacy_print():
 	return
 
 def diplomacy_solve():
 	return
+'''
