@@ -1,3 +1,32 @@
+commit 57fd1ef390d4dbec8a2b1a18edf8c4df1ea13568
+Merge: e89a88f 4821d39
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 23:58:08 2021 +0000
+
+    Merge branch 'dev' into 'main'
+    
+    Dev Merge
+    
+    See merge request nhardham/diplomacy!1
+
+commit 4821d392e70d3f02224411a6e4c0470c7f50a3ce
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 23:51:36 2021 +0000
+
+    .gitlab.yml CI pipeline
+
+commit efadee8fa52397bff2f3909a5a744c528dde576c
+Author: Shawyan Mozaffar <smozaffar@utexas.edu>
+Date:   Thu Jul 15 23:50:11 2021 +0000
+
+    .gitignore file
+
+commit bfbbf5062f9c22e29a86609c1b603d8f0666801a
+Author: Nathan Hardham <nhardham@gmail.com>
+Date:   Thu Jul 15 18:45:12 2021 -0500
+
+    ran makefile, updated TestCollatz.py
+
 commit cfd0683747f96c249d1a4f4e8f25ba086fae0f40
 Author: Shawyan Mozaffar <smozaffar@utexas.edu>
 Date:   Thu Jul 15 17:48:22 2021 -0500
